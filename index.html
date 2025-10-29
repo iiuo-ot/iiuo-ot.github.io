@@ -1,78 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="IIUO.org — Non-Profit Organization by It Is Unique Official supporting people and businesses to grow.">
-  <title>IIUO.org | It Is Unique Official</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Tools — Free Web Utilities</title>
+  <meta name="description" content="Online Tools — free web utilities for developers, designers, and students. Fast, simple, and privacy-friendly." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">IIUO<span>.org</span></div>
-      <nav id="nav-menu">
-        <ul>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Online Tools</a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#categories">Categories</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" id="menu-toggle">☰</button>
+
+      <div class="controls">
+        <input id="search" class="search" type="search" placeholder="Search tools…" />
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Empowering Growth Through Open-Source Innovation</h1>
-      <p>IIUO.org — A Non-Profit Organization by <strong>It Is Unique Official</strong> that helps people and businesses grow through digital empowerment.</p>
-      <a href="#about" class="btn">Learn More</a>
+  <!-- Hero -->
+  <section class="hero container">
+    <h1>Powerful Online Tools</h1>
+    <p class="lead">All-in-one collection of text, image & developer tools — fast, clean, and free.</p>
+    <a href="#tools" class="btn primary">Explore Tools</a>
+  </section>
+
+  <!-- Category Pills -->
+  <section id="categories" class="container categories">
+    <h2>Categories</h2>
+    <div class="pill-wrap">
+      <button class="pill active" data-cat="all">All</button>
+      <button class="pill" data-cat="text">Text</button>
+      <button class="pill" data-cat="image">Image</button>
+      <button class="pill" data-cat="dev">Dev</button>
+      <button class="pill" data-cat="crypto">Crypto</button>
+      <button class="pill" data-cat="misc">Misc</button>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About IIUO.org</h2>
-      <p><strong>IIUO.org</strong> is a non-profit organization maintained by <strong>It Is Unique Official</strong>. We offer an open-source platform for registering and managing businesses, products, and subdomains — supporting entrepreneurs and creators to thrive in a connected world.</p>
-      <p>Our mission is to empower individuals and communities through accessible technology and open collaboration.</p>
+  <!-- Tools Grid -->
+  <section id="tools" class="container tools-grid">
+    <h2>All Tools</h2>
+    <div id="toolsList" class="grid">
+      <!-- Text Tools -->
+      <article class="card" data-cat="text">
+        <h3>Text Case Converter</h3>
+        <p>Convert text to UPPERCASE, lowercase, Title Case, and more.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <article class="card" data-cat="text">
+        <h3>Word Counter</h3>
+        <p>Count words, characters, and reading time.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <article class="card" data-cat="text">
+        <h3>Remove Extra Spaces</h3>
+        <p>Clean unwanted spaces and blank lines instantly.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <!-- Image Tools -->
+      <article class="card" data-cat="image">
+        <h3>QR Code Generator</h3>
+        <p>Create QR codes from text or URLs.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <article class="card" data-cat="image">
+        <h3>Image Compressor</h3>
+        <p>Compress PNG & JPG images efficiently.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <article class="card" data-cat="image">
+        <h3>Image to Base64</h3>
+        <p>Convert image files to Base64 strings easily.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <!-- Dev Tools -->
+      <article class="card" data-cat="dev">
+        <h3>JSON Formatter</h3>
+        <p>Beautify & validate JSON data instantly.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <article class="card" data-cat="dev">
+        <h3>Base64 Encoder/Decoder</h3>
+        <p>Encode or decode Base64 data for developers.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <article class="card" data-cat="dev">
+        <h3>HTML Minifier</h3>
+        <p>Compress HTML code & reduce page size.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <!-- Crypto -->
+      <article class="card" data-cat="crypto">
+        <h3>Hash Generator</h3>
+        <p>Generate MD5, SHA1 & SHA256 hashes.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <!-- Misc -->
+      <article class="card" data-cat="misc">
+        <h3>Timestamp Converter</h3>
+        <p>Convert UNIX timestamps to readable dates.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+
+      <article class="card" data-cat="misc">
+        <h3>UUID Generator</h3>
+        <p>Create random UUIDs (v4) instantly.</p>
+        <a href="#" class="card-link">Open</a>
+      </article>
+    </div>
+
+    <div class="empty-state" id="noResults" hidden>
+      <p>No tools found for this category.</p>
     </div>
   </section>
 
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Focus Areas</h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <h3>Business Registration</h3>
-          <p>Streamlined open-source tools to register and manage your business efficiently.</p>
-        </div>
-        <div class="service-card">
-          <h3>Product Management</h3>
-          <p>Maintain and monitor product portfolios with simplicity and accessibility.</p>
-        </div>
-        <div class="service-card">
-          <h3>Subdomain Creation</h3>
-          <p>Claim your digital presence securely under IIUO.org and grow globally.</p>
-        </div>
+  <!-- About -->
+  <section id="about" class="container about">
+    <h2>About Online Tools</h2>
+    <p>Online Tools is a fast, privacy-focused collection of small utilities. No ads, no tracking — just productivity.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Online Tools</strong>
+        <div class="muted">© <span id="year"></span> ot.itisuniqueofficial.com</div>
       </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>We’re here to collaborate and support your growth journey.</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:support@iiuo.org">support@iiuo.org</a></li>
-        <li><strong>Website:</strong> <a href="https://iiuo.org/">https://iiuo.org/</a></li>
-        <li><strong>Address:</strong> Mahadev Mandir, Ughda, Karegaon Rd, Mathura Nagar, Krishi Sarathi Colony, Parbhani, Maharashtra 431401</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> IIUO.org — Maintained by It Is Unique Official.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
   </footer>
 
